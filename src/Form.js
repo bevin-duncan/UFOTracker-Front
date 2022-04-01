@@ -12,7 +12,7 @@ function Form() {
     city_latitude: "",
     city_longitude: ""
   }
-  // const [formData, setFormData] = useState({ ...defValues });
+ 
   
   const {
     register,
@@ -22,7 +22,6 @@ function Form() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    // setFormData(data);
     postSighting(data);
   }
  
@@ -39,7 +38,6 @@ function Form() {
       .then((savedSighting) => {
         console.log(savedSighting);
         reset({ ...defValues });
-        // setFormData({ ...defValues });
       }).catch((err) => {
         console.err(err.message);
       })
@@ -47,14 +45,14 @@ function Form() {
 
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form id="form" onSubmit={handleSubmit(onSubmit)}>
       <input placeholder="Summary" {...register('summary')} />
       <input placeholder="City"{...register('city')} />
       <input placeholder="State"{...register('state')} />
       <input placeholder="Shape of Craft"{...register('shape')} />
       <input type="datetime-local" placeholder="Date and Time"{...register('date_time')} />
       <input type="number" step="0.001" placeholder="City Latitude" {...register('city_latitude')} />
-      <input type="number" step="0.001" placeholder="City Longitude" {...register('city_longitude')} />
+      <input type="number" step="0.001" defaultValue = "-" placeholder="City Longitude" {...register('city_longitude')} />
       <input type="submit" />
     </form>
   );
