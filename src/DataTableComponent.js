@@ -1,4 +1,6 @@
 
+import React from 'react';
+import DataTable from 'react-data-table-component';
 
 const ExpandedComponent = ({ data }) => <pre>{JSON.stringify(data, null, 2)}</pre>;
 
@@ -32,3 +34,16 @@ const columns = [
     selector: row => row.city_longitude,
   },
 ];
+
+const Table = ({data}) => {
+  return (
+    <DataTable
+    columns={columns}
+    data={data}
+    expandableRows
+    expandableRowsComponent={ExpandedComponent}
+    />
+  )
+}
+
+export default Table;
