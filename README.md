@@ -1,3 +1,23 @@
+An app that tracks UFO sightings all around the state of Washington using the data available on the National UFO Reporting Center database (NUFORC)
+
+Backend Repo: https://github.com/bevin-duncan/UFOTracker-Back
+
+Data derived here: https://www.nuforc.org/webreports/ndxlWA.html
+
+
+Dependencies: 
+Smarter CSV
+Mapbox GL
+React Map GL
+Semantic UI
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
