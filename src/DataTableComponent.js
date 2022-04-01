@@ -26,6 +26,10 @@ const columns = [
     selector: row => row.shape,
   },
   {
+    name: 'Full Description',
+    selector: row => row.text,
+  },
+  {
     name: 'City Latitude',
     selector: row => row.city_latitude,
   },

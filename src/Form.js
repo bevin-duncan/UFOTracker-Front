@@ -45,6 +45,10 @@ function Form() {
 
 
   return (
+    <div>
+      <div id="submit-header">
+    <h1>Submit a Sighting</h1>
+    </div>
     <form id="form" onSubmit={handleSubmit(onSubmit)}>
       <input placeholder="Summary" {...register('summary')} />
       <input placeholder="City"{...register('city')} />
@@ -55,6 +59,7 @@ function Form() {
       <input type="number" step="0.001" defaultValue = "-" placeholder="City Longitude" {...register('city_longitude')} />
       <input type="submit" />
     </form>
+    </div>
   );
 }
 
