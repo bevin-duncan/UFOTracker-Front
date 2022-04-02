@@ -95,8 +95,6 @@ function Root() {
                 <button class="ui button" 
                 onClick={(e) => deleteSighting(e, sighting.id)}>Delete
                 </button>
-
-                {/* <div className="button" onClick={(e) => deleteSighting(e, sighting.id)}>Delete</div> */}
               </Popup>
             )}
           </div>
@@ -107,12 +105,8 @@ function Root() {
     <SearchBar searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}/>
     <Table data={filteredSightings} font="Arial"/>
-
-      
-    </>
-    {/* // </Segment>
-    // <Divider /> */}
-    </div>
+  </>
+s</div>
   );
 }
 
@@ -120,7 +114,7 @@ function Root() {
 
 
 
-// https://github.com/bevin-duncan/UFOTracker-Front
+
 
 
 
