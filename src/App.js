@@ -33,11 +33,6 @@ function Root() {
     .then(res => res.json())
     .then(setSightings)
   }
-  // useEffect(() => {
-  //   fetch('http://localhost:9292/Sightingorites')
-  //   .then(res => res.json())
-  //   .then(setSightingorites)
-  // }, [])
 
 
 
