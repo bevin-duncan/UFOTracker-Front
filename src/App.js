@@ -10,6 +10,7 @@ import { Container } from 'semantic-ui-react';
 
 
 
+
 const MAPBOX_TOKEN = 'pk.eyJ1Ijoicm95Z2JldiIsImEiOiJjbDFjYzRyYjcwMXU4M2RzNHphb3NpZzBlIn0.9eeP8zSUgqTVf-36OqYcEQ'; // Set your mapbox token here
 
 function Root() {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { Card } from 'react-bootstrap'
 
 function Form() {
   
@@ -45,6 +46,8 @@ function Form() {
 
 
   return (
+    <Card>
+  {/* <Card.Body> */}
     <div>
       <div id="submit-header">
     <h1>Submit a Sighting</h1>
@@ -60,6 +63,8 @@ function Form() {
       <input type="submit" />
     </form>
     </div>
+    {/* </Card.Body> */}
+</Card>
   );
 }
 
