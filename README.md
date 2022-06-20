@@ -6,6 +6,7 @@ Backend Repo: https://github.com/bevin-duncan/UFOTracker-Back
 Data derived here: https://www.nuforc.org/webreports/ndxlWA.html
 
 Install dependencies: npm i 
+STart server: npm start
 
 Dependencies: 
 Smarter CSV
