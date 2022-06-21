@@ -47,7 +47,7 @@ function Form() {
 
   return (
     <Card>
-  {/* <Card.Body> */}
+  <Card.Body>
     <div>
       <div id="submit-header">
     <h1>Submit a Sighting</h1>
@@ -63,7 +63,7 @@ function Form() {
       <input type="submit" />
     </form>
     </div>
-    {/* </Card.Body> */}
+    </Card.Body>
 </Card>
   );
 }
